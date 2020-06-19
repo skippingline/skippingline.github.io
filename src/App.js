@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import "./flexboxgrid.min.css";
 // Header and Footer
 import Header from "./Header.js";
 import "./main.scss";
