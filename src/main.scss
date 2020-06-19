@@ -1,0 +1,21 @@
+body {
+    background: #f8f8f8;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background: lightgray;
+    .logo{
+        height: 100px;
+    }
+}
+
+main {
+    min-height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
