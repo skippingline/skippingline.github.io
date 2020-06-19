@@ -7,9 +7,11 @@ header {
     flex-direction: row;
     height: 100px;
     width: 100%;
-    background: lightgray;
+    background: white;
     .logo{
-        height: 100px;
+        height: 70px;
+        margin-left: 20px;
+        margin-top: 10px;
     }
 }
 
