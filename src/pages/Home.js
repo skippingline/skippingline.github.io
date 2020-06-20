@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Home = () => {
     return (
         <div className="container">
             <div className="row center-xs">
                 <div className="col-xs-10 col-md-6 searchBar calign row">
                     <div className="col-xs-6"><p>Search Now...</p></div>
+
                 </div>
             </div>
             <div className="row between-xs">
