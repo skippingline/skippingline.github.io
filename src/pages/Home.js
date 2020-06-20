@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 const Home = () => {
     return (
         <div className="container">
@@ -15,28 +16,28 @@ const Home = () => {
                                 col-sm-4
                                 col-md-3">
                     <div class="box1">
-                        between
+                        Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
                     <div class="box2">
-                        between
+                        Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
                     <div class="box3">
-                        between
+                        Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
                     <div class="box4">
-                        between
+                        Image Here
                     </div>
                 </div>
             </div>
