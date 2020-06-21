@@ -1,13 +1,40 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Logo from './Asset 11.svg';
-import menubar from './icons8menu.svg'
+import menubar from './icons8menu.svg';
 
-const Header = () => {
+const Header = (props) => {
+    const logLeClick = () => {
+        const mainElement = document.querySelector("main");
+        mainElement.classList.toggle("moveOver");
+    }
+
+    const collapseNav = () => {
+        const mainElement = document.querySelector("main");
+        window.scrollTo(0, 0);
+        mainElement.classList.remove("moveOver");
+    }
+
+
     return (
-        <header className="row">
-            <div className="logoContainer col-xs-6 valign"><img src={Logo} alt="Company Logo" className="logo" /></div>
-            <div className="logoContainer col-xs-6 valign"><img src={menubar} alt="Header Menu" className="menu" /></div>
-        </header >);
+        <>
+            <header>
+                <div className="container">
+                    <div className="row">
+                        <div className="logoContainer col-xs-6 valign"><img src={Logo} alt="Company Logo" className="logo" /></div>
+                        <div className="logoContainer col-xs-6 valign menuContainer"><img src={menubar} alt="Header Menu" className="menu" onClick={logLeClick} /></div>
+                    </div>
+                </div>
+            </header >
+            <div className="navLinks">
+                <ul>
+                    {props.navLinks.map((linkObject) => (
+                        <li key={linkObject.url}>
+                            <NavLink to={linkObject.url} activeClassName="activeMenuItem" exact onClick={collapseNav}>{linkObject.title}</NavLink>
+                        </li>))}
+                </ul>
+            </div>
+        </>);
 }
 
 export default Header;

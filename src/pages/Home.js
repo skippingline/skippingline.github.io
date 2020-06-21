@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -8,88 +8,86 @@ const Home = () => {
     return (
         <div className="container">
             <div className="row center-xs">
-                <div className="col-xs-10 col-md-6 searchBar calign row">
-                    <div className="col-xs-6"><p>Search Now...</p></div>
-
-                </div>
+                <input type="text" className="col-xs-10 col-md-6 searchBar" />
             </div>
-            <div className="row between-xs">
+            <div className="row between-xs grayBoxes">
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
-                    <div class="box1">
+                    <div>
                         Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
-                    <div class="box2">
+                    <div>
                         Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
-                    <div class="box3">
+                    <div>
                         Image Here
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-3">
-                    <div class="box4">
+                    <div>
                         Image Here
                     </div>
                 </div>
             </div>
-            <div className="row between-xs">
-            <div className="col-xs-6
+            <div className="row between-xs magentaBoxes">
+                <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box5">
+                    <div>
                         between
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box6">
+                    <div>
                         between
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box7">
+                    <div>
                         between
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box8">
+                    <div>
                         between
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box9">
+                    <div>
                         between
                     </div>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div class="box10">
+                    <div>
                         between
                     </div>
                 </div>
             </div>
         </div>
-        
-    )};
+
+    )
+};
 
 
 export default Home;
