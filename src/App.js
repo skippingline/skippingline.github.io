@@ -7,6 +7,7 @@ import Header from "./Header.js";
 import "./main.scss";
 //page imports
 import Home from "./pages/Home";
+import SignUp from "./pages/SignUp";
 import Xavier from "./pages/Xavier";
 
 const navLinks = [
@@ -24,6 +25,7 @@ const App = () => {
       <main>
         <Route path="/" component={Home} exact />
         <Route path="/xavierspage" component={Xavier} exact />
+        <Route path="/signupin" component={SignUp} exact />
       </main>
       <Footer navLinks={navLinks} />
 

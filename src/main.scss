@@ -56,6 +56,7 @@ main {
     transition: .2s ease-in-out right;
     background: #f8f8f8;
     z-index: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .moveOver {
