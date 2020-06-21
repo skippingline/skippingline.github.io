@@ -59,9 +59,27 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
+main::after {
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    transition: .2s ease-in-out;
+    content: ' ';
+    background: rgba(0,0,0,.6);
+}
 .moveOver {
     right: 300px;
+    pointer-events: none;
 }
+
+.moveOver::after {
+    right: 300px;
+    opacity: 1;
+}
+
 
 
 .activeMenuItem {
