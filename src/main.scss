@@ -211,26 +211,38 @@ footer {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .categorypageboxes1{
-    border: 1px solid magenta;
+    border: 1px solid #f54029;
     height: 75px;
+    background-color: #f54029;
+}
+
+.categorypageboxes1.a{
+    border: 1px solid #f54029;
+    height: 75px;
+    background-color: #f54029;
 }
 
 .categorypageboxes2{
-    border: 1px solid magenta;
+    border: 1px solid #2c60c9;
     height: 75px;
+    background-color: #2c60c9;
 }
 
 .categorypageboxes3{
-    border: 1px solid magenta;
+    border: 1px solid #00ab44;
     height: 75px;
+    background-color: #00ab44;
 }
 
 .categorypageboxes4{
-    border: 1px solid magenta;
+    border: 1px solid #fa9d50;
     height: 75px;
+    background-color: #fa9d50;
 }
 
 .categorypageboxes5{
