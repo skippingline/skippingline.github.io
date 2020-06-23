@@ -15,7 +15,7 @@ const navLinks = [
   { url: "/", title: "Home" },
   { url: "/categories", title: "Categories" },
   { url: "/faq", title: "Frequently Asked Questions" },
-  { url: "/establishment", title: "Establishment Sign-Up" }];
+  { url: "/EstablishmentSignUp", title: "Establishment Sign-Up" }];
 
 
 
