@@ -1,6 +1,6 @@
 import react from "react";
 
-const restpage = () => {
+const RestaurantPage = () => {
     return(
         <div className="row between-xs restpageboxes">
         <div className="col-xs-6
