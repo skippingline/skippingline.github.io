@@ -8,6 +8,7 @@ import "./main.scss";
 import Categories from "./pages/Categories";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
+import EstablishmentSignUp from "./pages/EstablishmentSignUp";
 
 
 const navLinks = [
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <Route path="/categories" component={Categories} />
           <Route path="/signupin" component={SignUp} />
+          <Route path="/EstablishmentSignUp" component={EstablishmentSignUp} />
           <Route component={Error404} />
         </Switch>
       </main>
