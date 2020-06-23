@@ -6,11 +6,11 @@ const EstablishmentSignUp = () => {
     }
 
     return (
-        <div className="container Establishmentsignuppage">
-            <div className="row center-xs Establishmentsignuppage">
+        <div className="container estsignuppage">
+            <div className="row center-xs estsignuppage">
                 <div className="col-xs-10
                             col-sm-6
-                            col-md-6 col-lg-4 signupbox container">
+                            col-md-6 col-lg-4 estsignupbox container">
                     <div className="row">
                         <label htmlFor="name" className="col-xs-12">First Name</label>
                         <input name="name" type="text" id="estsignupname" className="col-xs-12 " />
@@ -96,7 +96,7 @@ const EstablishmentSignUp = () => {
 
                     </div>
                     <div className="row">
-                        <button className="col-xs-8 col-xs-offset-2 signupbutton" type="button" onClick={submitData}>Let's do This!</button>
+                        <button className="col-xs-8 col-xs-offset-2 estsignupbutton" type="button" onClick={submitData}>Let's do This!</button>
                     </div>
                 </div>
             </div>
