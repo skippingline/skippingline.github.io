@@ -10,15 +10,13 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import EstablishmentSignUp from "./pages/EstablishmentSignUp";
 
-
-
 const navLinks = [
   { url: "/signupin", title: "Sign Up / Sign In" },
   { url: "/", title: "Home" },
   { url: "/categories", title: "Categories" },
   { url: "/faq", title: "Frequently Asked Questions" },
-  { url: "/EstablishmentSignUp", title: "Establishment Sign-Up" }];
-
+  { url: "/EstablishmentSignUp", title: "Establishment Sign-Up"}];
+  
 
 
 

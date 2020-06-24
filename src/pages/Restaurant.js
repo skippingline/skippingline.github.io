@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 const RestaurantPage = () => {
     return(
@@ -36,4 +36,4 @@ const RestaurantPage = () => {
 
 }
 
-export default restpage;
+export default RestaurantPage;
