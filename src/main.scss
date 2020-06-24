@@ -227,15 +227,13 @@ footer {
     }
 }
 
-.restpageboxes{
+.restaurantboxes .col-xs-6 div {
     border: 1px solid #cccccc;
-    font-weight: bold;
-    color: white;
+    margin-top: 3em;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
-    height: 100px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -282,4 +280,39 @@ footer {
         padding-left: 0;
         margin-bottom: 0.25em;
     }
+}
+
+.restaurantdropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restauranttitle {
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.restaurantwhatshot {
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: .80em;
+}
+
+.containerrestaurant {
+    width: 95% !important;
 }

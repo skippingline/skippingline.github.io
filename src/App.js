@@ -9,6 +9,7 @@ import Categories from "./pages/Categories";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import EstablishmentSignUp from "./pages/EstablishmentSignUp";
+import Restaurant from "./pages/Restaurant";
 
 
 const navLinks = [
@@ -16,6 +17,7 @@ const navLinks = [
   { url: "/", title: "Home" },
   { url: "/categories", title: "Categories" },
   { url: "/faq", title: "Frequently Asked Questions" },
+  {url: "/Restaurant", title: "Restaurant"},
   { url: "/EstablishmentSignUp", title: "Establishment Sign-Up"}];
   
 
@@ -31,6 +33,7 @@ const App = () => {
           <Route path="/categories" component={Categories} />
           <Route path="/signupin" component={SignUp} />
           <Route path="/EstablishmentSignUp" component={EstablishmentSignUp} />
+          <Route path="/Restaurant" component={Restaurant} />
           <Route component={Error404} />
         </Switch>
       </main>
