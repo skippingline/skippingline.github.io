@@ -1,6 +1,6 @@
 import React from "react";
 
-const RestaurantPage = () => {
+const Restaurant = () => {
     return(
         <div className="row between-xs restpageboxes">
         <div className="col-xs-6
@@ -36,4 +36,4 @@ const RestaurantPage = () => {
 
 }
 
-export default RestaurantPage;
+export default Restaurant;

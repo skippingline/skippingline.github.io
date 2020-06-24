@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import EstablishmentSignUp from "./pages/EstablishmentSignUp";
 
+
 const navLinks = [
   { url: "/signupin", title: "Sign Up / Sign In" },
   { url: "/", title: "Home" },
