@@ -295,13 +295,10 @@ footer {
 }
 
 .bookingplace {
-    justify-content: center;
-    align-items: center;
-}
-
-.bookingplace {
     border: 1px solid #cccccc;
     height: 110px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bookingdatetime {
@@ -309,7 +306,26 @@ footer {
     height: 30px;
 }
 
-.bookingbutton {
+.esthomeheader {
+    border: 1px solid #cccccc;
+    height: 90px;
+    align-content: center;
+    justify-content: center;
+}
+
+.esthometime {
+    border: 1px solid #cccccc;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+.esthomechart {
+    border: 1px solid #cccccc;
+    height: 30px;
+}
+
+.esthomeidentifier {
     border: 1px solid #cccccc;
     height: 30px;
     align-content: center;

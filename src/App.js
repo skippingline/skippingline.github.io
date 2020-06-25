@@ -11,6 +11,7 @@ import SignUp from "./pages/SignUp";
 import EstablishmentSignUp from "./pages/EstablishmentSignUp";
 import Restaurant from "./pages/Restaurant";
 import Booking from "./pages/Booking";
+import EstablishmentHome from "./pages/EstablishmentHome";
 
 
 const navLinks = [
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/EstablishmentSignUp" component={EstablishmentSignUp} />
           <Route path="/Restaurant" component={Restaurant} />
           <Route path="/Booking" component={Booking} />
+          <Route path="/EstablishmentHome" component={EstablishmentHome} />
           <Route component={Error404} />
         </Switch>
       </main>
