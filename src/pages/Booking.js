@@ -17,13 +17,12 @@ const Booking = () => {
                 </div>
 
                 <div className="row between-xs bookingbutton">
-                    <button type="button">Book Now</button>
+                    <span><button type="button">Book Now</button></span>
                 </div>
 
-                <div className="row center-xs calendar">
-                    <label>calendar</label>
-                </div>
+                <div className="row between-xs calendar">
 
+                </div>
             </div>
     )
 };
