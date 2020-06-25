@@ -10,7 +10,12 @@ const Booking = () => {
 
                 <div className="row between-xs bookingdatetime">
                     <label>Date</label>
-                    <div><label>Time</label><button className="col-xs-8 col-xs-offset-2 bookingbutton" type="button">Sign Up!</button></div>
+                    <div>
+                        <span>
+                            <label>Time</label>
+                            <button className="col-xs-8 col-xs-offset-2 bookingbutton" type="button">Book Now</button>
+                        </span>
+                    </div>
                 </div>
 
                 <div className="row center-xs calendar">
