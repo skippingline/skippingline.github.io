@@ -1,11 +1,10 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
 
 const Booking = () => {
     return (
             <div className="container">
-                <div className="row between-xs bookingplace">
-                    <label><h1>Name</h1>Name</label>
+                <div className="row center-xs bookingplace">
+                    <label><h1>Name</h1><h3>Add</h3></label>
                 </div>
 
                 <div className="row between-xs bookingdatetime">
@@ -13,13 +12,16 @@ const Booking = () => {
                     <div>
                         <span>
                             <label>Time</label>
-                            <button className="col-xs-8 col-xs-offset-2 bookingbutton" type="button">Book Now</button>
                         </span>
                     </div>
                 </div>
 
-                <div className="row center-xs calendar">
+                <div className="row between-xs bookingbutton">
+                    <button type="button">Book Now</button>
+                </div>
 
+                <div className="row center-xs calendar">
+                    <label>calendar</label>
                 </div>
 
             </div>
