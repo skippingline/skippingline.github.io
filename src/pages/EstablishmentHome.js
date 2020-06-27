@@ -46,7 +46,10 @@ export default function EstablishmentHome() {
                             col-md-6">
 
                     <div className="EstablishmentHomeIcon">
-                        <span>Icon Here</span>
+                            <svg height="200" width="200">
+	                            <circle class="establishmentcircle" cx="100" cy="100" r="95" stroke="#2BFC7F" stroke-width="10" fill-opacity="0" />
+                                <text x="50%" y="50%" text-anchor="middle" stroke="#2BFC7F">Text</text>
+                            </svg>
                     </div>
             </div>
 

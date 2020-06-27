@@ -417,18 +417,30 @@ footer {
     justify-content: center;
 }
 
-.EstablishmentHomeIcon {
-    border: 1px solid magenta;
+.EstablishmentHomeChart {
     margin-top: 2em;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.EstablishmentHomeChart {
-    margin-top: 5em;
+.EstablishmentHomeIcon {
+    border: 1px solid magenta;
+    margin-top: 2em;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.establishmentcircle {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: stroke 3s ease-out forwards;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+	}
 }
