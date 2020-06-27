@@ -1,35 +1,65 @@
 import React from 'react';
+import { Line } from "react-chartjs-2";
 
-const Calendar = () => {
-    return (<div>yo</div>)
-}
-
-
-const EstablishmentHome = () => {
-    return (
-        <div className="container">
-            <div><Calendar /></div>
-            <div className="row center-xs esthomeheader">
-                <label><h1>Circle Animation</h1><h3>#</h3></label>
-            </div>
-
-            <div className="row center-xs esthometime">
-                <div>
-                    <label>Time</label>
-                </div>
-            </div>
-
-            <div className="row center-xs esthomechart">
-                <span>Chart</span>
-            </div>
-
-            <div className="row center-xs esthomeidentifier">
-                <span>Unique Identifier</span>
-            </div>
-        </div>
-
-    )
-
+const data = {
+  labels: ["8:00", "9:00", "10:00", "11:00", "12:00", "1:00"],
+  datasets: [
+    {
+      data: [33, 38, 33, 27, 42, 53],
+      fill: true,
+      backgroundColor: "rgba(203,84,247,0.2)",
+      borderColor: "rgba(203,84,247,1)"
+    }
+  ]
 };
 
-export default EstablishmentHome;
+const legend = {
+  display: false,
+  position: "bottom",
+  labels: {
+    fontColor: "#323130",
+    fontSize: 18,
+  }
+};
+
+const options = {
+  title: {
+    display: false,
+  },
+  scales: {
+    yAxes: [
+      {
+        ticks: {
+          display: false,
+        }
+      }
+    ]
+  }
+};
+
+export default function EstablishmentHome() {
+  return (
+    <div className="container">
+        <div className="row center-xs EstablishmentHomeBoxes">
+            <div className="col-xs-12
+                            col-sm-8
+                            col-md-6">
+
+                    <div className="EstablishmentHomeIcon">
+                        <span>Icon Here</span>
+                    </div>
+            </div>
+
+            <div className="col-xs-12
+                            col-sm-8
+                            col-md-6">
+
+                    <div className="EstablishmentHomeChart">
+                        <Line data={data} legend={legend} options={options} />
+                    </div> 
+            </div>
+        
+        </div>
+    </div>
+  );
+}
