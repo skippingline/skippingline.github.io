@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Logo from './Asset 11.svg';
 
 
 const Header = (props) => {
@@ -23,7 +22,7 @@ const Header = (props) => {
             <header>
                 <div className="container">
                     <div className="row">
-                        <Link to="/" className="logoContainer col-xs-6 valign"><img src={Logo} alt="Company Logo" className="logo" onClick={() => window.scrollTo(0, 0)} /></Link>
+                        <Link to="/" className="logoContainer col-xs-6 valign"><img src="/mainLogo.svg" alt="Company Logo" className="logo" onClick={() => window.scrollTo(0, 0)} /></Link>
                         <div className="logoContainer col-xs-6 valign menuContainer"><svg onClick={logLeClick} className="menu" viewBox="25 25 50 50" xmlns="http://www.w3.org/2000/svg">
                             <g strokeDasharray="21 100" strokeDashoffset="82" stroke="#aaa" strokeWidth="3" strokeLinecap="round" fill="none">
                                 <path d="M0 40h62c13 0 6 28-4 18L35 35" />

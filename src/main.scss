@@ -1,6 +1,6 @@
 body {
     background: #dc83fc;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .row {
@@ -28,13 +28,13 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
-    .logo{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .logo {
         max-height: 55px;
         max-width: 100%;
     }
-    .menu{
-        max-height: 55px;
+    .menu {
+        height: 55px;
         max-width: 100%;
         cursor: pointer;
     }
@@ -43,20 +43,20 @@ header {
         height: 100%;
     }
     .menuContainer {
-        justify-content: right;
+        justify-content: flex-end;
     }
 }
 
 main {
-    min-height:80vh;
+    min-height: 80vh;
     padding: 3em 0;
     margin-top: 100px;
     position: relative;
     right: 0;
-    transition: .2s ease-in-out right;
+    transition: 0.2s ease-in-out right;
     background: #f8f8f8;
     z-index: 500;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 main::after {
@@ -66,10 +66,10 @@ main::after {
     width: 100%;
     height: 100%;
     top: 100px;
-    transition: .2s ease-in-out;
-    content: ' ';
+    transition: 0.2s ease-in-out;
+    content: " ";
     opacity: 0;
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 .moveOver {
     right: 300px;
@@ -81,20 +81,17 @@ main::after {
     opacity: 1;
 }
 
-
-
 .activeMenuItem {
     border-left: 7px solid white;
 }
 
 footer {
-   padding: 3em 0;
-   background: #f8f8f8;
-   box-shadow: 0 0 10px rgba(0,0,0,.2);
-   position: relative;
-   z-index: 600;
+    padding: 3em 0;
+    background: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 600;
 }
-
 
 .container {
     width: 95% !important;
@@ -116,7 +113,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .magentaBoxes .col-xs-6 div {
@@ -128,7 +125,7 @@ footer {
     align-items: center;
     margin-top: 2em;
     height: 100px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .navLinks {
@@ -147,14 +144,13 @@ footer {
                 padding: 1.25em 1.5em;
                 width: 100%;
                 text-decoration: none;
-                transition: .2s ease-in-out;
+                transition: 0.2s ease-in-out;
                 color: white;
             }
             a:hover {
-                background: rgba(0,0,0,.2);
+                background: rgba(0, 0, 0, 0.2);
             }
         }
-
     }
 }
 
@@ -164,31 +160,31 @@ footer {
     align-items: center;
 }
 
-.signupbox{
+.signupbox {
     border: 1px solid #cccccc;
     background: white;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 3em;
     input {
         border: 1px solid #cccccc;
         margin-bottom: 1em;
         font-size: 1.5em;
-        padding: .5em;
+        padding: 0.5em;
         font-weight: 100;
     }
     .signupbutton {
-        border:0.16em solid rgba(255,255,255,0);
-        border-radius:2em;
+        border: 0.16em solid rgba(255, 255, 255, 0);
+        border-radius: 2em;
         box-sizing: border-box;
         text-decoration: none;
-        color:#FFFFFF;
-        text-align:center;
+        color: #ffffff;
+        text-align: center;
         background-color: #cb54f7;
-        padding: .5em 0;
+        padding: 0.5em 0;
         font-size: 1.5em;
         margin-top: 1em;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         &:hover {
             background: #a443c7;
             cursor: pointer;
@@ -202,7 +198,6 @@ footer {
         margin-bottom: 0.25em;
     }
 }
-
 
 .categories {
     text-align: center;
@@ -239,14 +234,14 @@ footer {
     align-items: center;
 }
 
-.restaurantBoxes .col-xs-6 div{
+.restaurantBoxes .col-xs-6 div {
     border: 1px solid #cccccc;
     margin-top: 1em;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .Establishmentsignuppage {
@@ -255,31 +250,31 @@ footer {
     align-items: center;
 }
 
-.estsignupbox{
+.estsignupbox {
     border: 1px solid #cccccc;
     background: white;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 3em;
     input {
         border: 1px solid #cccccc;
         margin-bottom: 1em;
         font-size: 1.5em;
-        padding: .5em;
+        padding: 0.5em;
         font-weight: 100;
     }
     .estsignupbutton {
-        border:0.16em solid rgba(255,255,255,0);
-        border-radius:2em;
+        border: 0.16em solid rgba(255, 255, 255, 0);
+        border-radius: 2em;
         box-sizing: border-box;
         text-decoration: none;
-        color:#FFFFFF;
-        text-align:center;
+        color: #ffffff;
+        text-align: center;
         background-color: #cb54f7;
-        padding: .5em 0;
+        padding: 0.5em 0;
         font-size: 1.5em;
         margin-top: 1em;
-        transition: .2s ease-in-out;
+        transition: 0.2s ease-in-out;
         &:hover {
             background: #a443c7;
             cursor: pointer;
@@ -294,11 +289,101 @@ footer {
     }
 }
 
-.bookingplace {
-    border: 1px solid #cccccc;
-    height: 110px;
+.storeInfo {
+    width: 100%;
+}
+.storeBackground {
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+
+    div {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 2em 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+    h1,
+    h3 {
+        margin: 0;
+        padding: 0.25em;
+    }
+    h3 {
+        font-weight: 100;
+        font-size: 1.5em;
+    }
+}
+
+.datePicker {
+    display: flex;
+    max-width: 100%;
     justify-content: center;
-    align-items: center;
+    margin: 1em 0;
+    .monthSwitcher {
+        background-color: #cb54f7;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 0.5em 0;
+        color: white;
+        button {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 0.5em 0.8em;
+            border-radius: 0px;
+            transition: 0.1s ease-in-out;
+            color: white;
+            font-weight: 900;
+            font-size: 1.5em;
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .allDays {
+        display: flex;
+        overflow-x: scroll;
+        .month {
+            font-weight: 100;
+        }
+        .day {
+            font-weight: 900;
+            font-size: 2em;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.05);
+            margin: 0.25em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                background: #bbb;
+            }
+        }
+        input[type="radio"]:checked + label {
+            background-color: #cb54f7;
+            color: white;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+    }
 }
 
 .bookingdatetime {

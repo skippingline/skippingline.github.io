@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Error404 from "./Error404.js";
 import "./flexboxgrid.min.css";
 import Footer from "./Footer.js";
 import Header from "./Header.js";
 import "./main.scss";
-import Categories from "./pages/Categories";
-import Home from "./pages/Home";
-import SignUp from "./pages/SignUp";
-import EstablishmentSignUp from "./pages/EstablishmentSignUp";
-import Restaurant from "./pages/Restaurant";
 import Booking from "./pages/Booking";
+import Categories from "./pages/Categories";
+import Error404 from "./pages/Error404.js";
 import EstablishmentHome from "./pages/EstablishmentHome";
+import EstablishmentSignUp from "./pages/EstablishmentSignUp";
+import Home from "./pages/Home";
+import Restaurant from "./pages/Restaurant";
+import SignUp from "./pages/SignUp";
 
 
 const navLinks = [
@@ -19,8 +19,8 @@ const navLinks = [
   { url: "/", title: "Home" },
   { url: "/categories", title: "Categories" },
   { url: "/faq", title: "Frequently Asked Questions" },
-  { url: "/EstablishmentSignUp", title: "Establishment Sign-Up"}];
-  
+  { url: "/EstablishmentSignUp", title: "Establishment Sign-Up" }];
+
 
 
 
@@ -33,10 +33,10 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <Route path="/categories" component={Categories} />
           <Route path="/signupin" component={SignUp} />
-          <Route path="/EstablishmentSignUp" component={EstablishmentSignUp} />
-          <Route path="/Restaurant" component={Restaurant} />
-          <Route path="/Booking" component={Booking} />
-          <Route path="/EstablishmentHome" component={EstablishmentHome} />
+          <Route path="/establishmentsignup" component={EstablishmentSignUp} />
+          <Route path="/restaurant" component={Restaurant} />
+          <Route path="/booking/:locationID" children={<Booking />} />
+          <Route path="/establishmenthome" component={EstablishmentHome} />
           <Route component={Error404} />
         </Switch>
       </main>
