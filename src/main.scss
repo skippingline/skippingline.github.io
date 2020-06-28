@@ -228,16 +228,29 @@ footer {
     }
 }
 
-.restaurantdropdown {
-    border: none;
-    color: black;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: bolder;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.restaurantheader {
+    font-size: 13px;
+  padding: 10px 8px 10px 14px;
+  background:none;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 2em;
+}
+
+.restaurantdropselect {
+  font-size: 25px;
+  font-weight: bolder;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #ffffff;
+  text-align: center;
 }
 
 .restaurantBoxes .col-xs-6 div {
