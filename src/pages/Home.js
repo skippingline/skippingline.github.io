@@ -2,13 +2,16 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 
-
-
 const Home = () => {
     return (
         <div className="container">
             <div className="row center-xs">
-                <input type="text" className="col-xs-10 col-md-6 searchBar" />
+                <input type="text" className="col-xs-10 col-md-6 searchBar" placeholder="Search to Skip"/>
+                    <button type="button" className="HomeSearchButton">
+                        <div style={{alignContent:"center", margin:"0 auto", textAlign:"center", fontFamily:"helvetica"}}>
+                            <svg className="HomeSearchIcon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g className="search-path" fill="none" stroke="#Cb54F7"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+                        </div>
+                    </button>
             </div>
             <div className="row between-xs grayBoxes">
                 <div className="col-xs-6
@@ -80,7 +83,7 @@ const Home = () => {
                                 col-sm-4
                                 col-md-4">
                     <div>
-                    <svg id="svg6" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#cb54f7'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    <svg id="svg6" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#cccccc'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
                     </div>
                 </div>
             </div>
