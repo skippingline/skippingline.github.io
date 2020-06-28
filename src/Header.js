@@ -5,7 +5,6 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = (props) => {
     const logLeClick = () => {
         const mainElement = document.querySelector("main");
-
         mainElement.classList.toggle("moveOver");
     }
 
@@ -23,7 +22,7 @@ const Header = (props) => {
                 <div className="container">
                     <div className="row">
                         <Link to="/" className="logoContainer col-xs-6 valign"><img src="/mainLogo.svg" alt="Company Logo" className="logo" onClick={() => window.scrollTo(0, 0)} /></Link>
-                        <div className="logoContainer col-xs-6 valign menuContainer"><svg onClick={logLeClick} className="menu" viewBox="25 25 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <div className="logoContainer col-xs-6 valign menuContainer"><button onClick={logLeClick} ><svg className="menu" viewBox="25 25 50 50" xmlns="http://www.w3.org/2000/svg">
                             <g strokeDasharray="21 100" strokeDashoffset="82" stroke="#aaa" strokeWidth="3" strokeLinecap="round" fill="none">
                                 <path d="M0 40h62c13 0 6 28-4 18L35 35" />
                                 <path d="M0 50h70" />
@@ -52,7 +51,7 @@ const Header = (props) => {
                                 <animate dur="0.001s" id="reverseAnimation" attributeName="r" values="16; 0" fill="freeze" begin="click; indefinite" />
                                 <animate dur="0.001s" attributeName="r" values="0; 50" begin="startAnimation.end" fill="freeze" />
                             </circle>
-                        </svg></div>
+                        </svg></button></div>
                     </div>
                 </div>
             </header >

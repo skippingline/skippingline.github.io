@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import "./Booking.scss";
 const locationData = [
@@ -56,11 +56,9 @@ const days = [
 ];
 
 
-const getNumDaysInMonth = () => {
-    const today = new Date();
-    // const currentMonth = today.getMonth();
-    const currentMonth = 4;
-    const currentYear = today.getFullYear();
+const getNumDaysInMonth = (d) => {
+    const currentMonth = d.getMonth();
+    const currentYear = d.getFullYear();
     let currentNumDays = 28;
     for (let i = 0; i < 5; i++) {
         const newMonth = new Date(currentYear, currentMonth, 28 + i).getMonth();
@@ -86,40 +84,52 @@ const StoreInfo = (props) => {
     )
 }
 
+const datesMatch = (a, b) => (a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate());
+
+const dateAsString = (d) => (d.getFullYear() + "-" + d.getMonth() + "-" + d.getDate());
+
 const DatePicker = () => {
     const [currentDate, updateDate] = useState(new Date());
-    // const today = new Date();
-    const numDays = getNumDaysInMonth();
+    const numDays = getNumDaysInMonth(currentDate);
     // get day of week index
     const dayIndex = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
     // build list of day numbers with corresponding days
-    const allDays = Array.from({ length: numDays }, (_, index) => index + 1);
-    const monthName = months[currentDate.getMonth()];
-    const dayIsCurrent = (day) => {
-        const today = new Date();
-        const rightMonthYear = (currentDate.getFullYear() === today.getFullYear() && currentDate.getMonth() === today.getMonth())
-        return (rightMonthYear && day === currentDate.getDay()) ? "checked" : "";
+    const allDates = Array.from({ length: numDays }, (_, index) => new Date(currentDate.getFullYear(), currentDate.getMonth(), index + 1));
+    const changeMonth = (amount) => {
+        updateDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + amount, 1));
+        document.querySelector(".allDays").scrollTo(0, 0);
     }
 
-    console.log(allDays);
-    console.log(currentDate.getDay())
+    useEffect(() => {
+        const today = new Date();
+        if (datesMatch(today, currentDate)) {
+            // yay it is here, but we must find where it is positionally on the page 
+            // const dateElement = document.querySelector(`#day-${currentDate.getDate()}`);
+            document.querySelector(".allDays").scrollLeft = (currentDate.getDate() - 1) * 146;
+        }
+    });
+    const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+
     return (<div className="row datePicker">
         <div className="monthSwitcher">
-            <button onClick={() => updateDate(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDay()))}> <span> &lt; </span> </button>
+            <button onClick={() => changeMonth(-1)}> <span> &lt; </span> </button>
             <p>{months[currentDate.getMonth()] + " " + currentDate.getFullYear()}</p>
-            <button onClick={() => updateDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDay()))}> <span> &gt; </span> </button>
+            <button onClick={() => changeMonth(+1)}> <span> &gt; </span> </button>
         </div>
 
 
         <div className="allDays">
-            {allDays.map(dayNum => (<div key={dayNum}>
-                <input type="radio" id={`day-${dayNum}`} name="dayofmonth" value={dayNum} onChange={() => dayNum === currentDate.getDate()} />
-                <label htmlFor={`day-${dayNum}`} key={dayNum}>
-                    <span className="weekday">{`${days[(dayNum + dayIndex - 1) % 7]}`}</span>
-                    <span className="day">{`${dayNum}`}</span>
-                    <span className="month">{`${monthName}`}</span>
-                </label>
-            </div>)
+            <div className="datePusher" style={{ width: `calc(130px * ${firstDay.getDay()} + (16px * ${firstDay.getDay() - 1})`, margin: firstDay.getDay() ? "8px" : "0" }} />
+            {allDates.map(singleDate => {
+                const dayNum = singleDate.getDate();
+                return (<div key={singleDate}>
+                    <input type="radio" id={dateAsString(singleDate)} name="dayofmonth" value={singleDate} checked={datesMatch(singleDate, currentDate)} onChange={(e) => updateDate(new Date(e.target.value))} />
+                    <label htmlFor={dateAsString(singleDate)}>
+                        <span className="weekday">{`${days[(dayNum + dayIndex - 1) % 7]}`}</span>
+                        <span className="day">{`${dayNum}`}</span>
+                    </label>
+                </div>)
+            }
             )}
         </div>
 
@@ -127,9 +137,18 @@ const DatePicker = () => {
     );
 }
 
+const TimePicker = ({ timeOpen, timeClose }) => {
+    const [currentTime, updateCurrentTime] = useState(timeOpen);
 
+    return (
+        <div className="row timePicker">
+            <div className="col-xs-12">
+                <input type="range" id="vol" name="vol" min={timeOpen} max={timeClose} value={currentTime} onChange={(e) => updateCurrentTime(parseInt(e.target.value, 10))} />
+            </div>
+        </div>
+    );
+}
 const Booking = () => {
-
     const { locationID } = useParams();
     const locationIDNumber = parseInt(locationID, 10);
     const location = locationData.filter((location) => location.id === locationIDNumber)[0];
@@ -144,15 +163,15 @@ const Booking = () => {
             <div>
                 <StoreInfo className="storeInfo" location={location} />
                 <div className="container">
+                    <h3>Choose a Booking Date</h3>
                     <DatePicker />
-
+                    <h3>Chooes a Booking Time</h3>
+                    <TimePicker timeOpen={location.open} timeClose={location.close} />
                     <div className="row between-xs bookingbutton">
                         <span><button type="button">Book Now</button></span>
                     </div>
 
-                    <div className="row between-xs calendar">
 
-                    </div>
                 </div>
             </div>
         )
