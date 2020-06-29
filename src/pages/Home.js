@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -13,43 +13,36 @@ const Home = () => {
                         </div>
                     </button>
             </div>
-            <div className="row between-xs grayBoxes">
-                <div className="col-xs-6
-                                col-sm-4
-                                col-md-3">
-                    <div>
-                        Image Here
-                    </div>
-                </div>
-                <div className="col-xs-6
-                                col-sm-4
-                                col-md-3">
-                    <div>
-                        Image Here
-                    </div>
-                </div>
-                <div className="col-xs-6
-                                col-sm-4
-                                col-md-3">
-                    <div>
-                        Image Here
-                    </div>
-                </div>
-                <div className="col-xs-6
-                                col-sm-4
-                                col-md-3">
-                    <div>
-                        Image Here
-                    </div>
-                </div>
+
+            <div className="row center-xs LabelSlide">
+                <label>Top Places to Skip</label>
             </div>
+
+            <section className="horizontal-scroll">
+                <div className="item">Item1</div>
+                <div className="item">Item2</div>
+                <div className="item">Item3</div>
+                <div className="item">Item4</div>
+                <div className="item">Item5</div>
+                <div className="item">Item6</div>
+                <div className="item">Item7</div>
+                <div className="item">Item8</div>
+                <div className="item">Item9</div>
+                <div className="item">Item10</div>
+                <div className="item">Item11</div>
+                <div className="item">Item12</div>
+            </section>
+
+
             <div className="row between-xs magentaBoxes">
                 <div className="col-xs-6
                                 col-sm-4
                                 col-md-4">
-                    <div>
-                    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#DE1A1A'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
-                    </div>
+                    <Link to="/Restaurant">
+                        <div>
+                            <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#DE1A1A'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                        </div>
+                    </Link>
                 </div>
                 <div className="col-xs-6
                                 col-sm-4
@@ -79,13 +72,15 @@ const Home = () => {
                     <svg id="svg5" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#3D3B8E'}} ><path d="M0 0h24v24H0z" fill="none"/><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
                     </div>
                 </div>
-                <div className="col-xs-6
-                                col-sm-4
-                                col-md-4">
-                    <div>
-                    <svg id="svg6" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#cccccc'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                    </div>
-                </div>
+                    <div className="col-xs-6
+                                    col-sm-4
+                                    col-md-4">
+                     <Link to="/Categories">
+                        <div>
+                            <svg id="svg6" xmlns="http://www.w3.org/2000/svg" width="50px" height= "50px" viewBox="0 0 24 24" style={{fill:'#cccccc'}}><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                     </Link>
+                 </div>
             </div>
         </div>
 

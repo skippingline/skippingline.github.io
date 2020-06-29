@@ -12,13 +12,12 @@ import EstablishmentSignUp from "./pages/EstablishmentSignUp";
 import Home from "./pages/Home";
 import Restaurant from "./pages/Restaurant";
 import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
 
 
 const navLinks = [
-  { url: "/signupin", title: "Sign Up / Sign In" },
-  { url: "/", title: "Home" },
-  { url: "/categories", title: "Categories" },
-  { url: "/faq", title: "Frequently Asked Questions" },
+  { url: "/signin", title: "Sign In" },
+  { url: "/signupin", title: "Sign Up" },
   { url: "/EstablishmentSignUp", title: "Establishment Sign-Up" }];
 
 
@@ -37,6 +36,7 @@ const App = () => {
           <Route path="/restaurant" component={Restaurant} />
           <Route path="/booking/:locationID" children={<Booking />} />
           <Route path="/establishmenthome" component={EstablishmentHome} />
+          <Route path="/SignIn" component={SignIn} />
           <Route component={Error404} />
         </Switch>
       </main>
