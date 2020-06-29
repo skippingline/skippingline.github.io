@@ -557,16 +557,17 @@ footer {
     height: 100px;
     text-align: center;
     padding: 20px
-  }
-  .horizontal-scroll {
+}
+
+.horizontal-scroll {
     overflow: hidden;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
     padding-top: 1em;
-  }
+}
 
-  .item {
+.item {
     border: 1px solid #cccccc;
     display: inline-block;
     width: 150px;
@@ -576,17 +577,36 @@ footer {
     font-size: 20px;
     margin: 0 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .LabelSlide {
+.LabelSlide {
       padding-top: 2em;
       font-size: 20px;
       font-weight: bolder;
       color: #757575;
-  }
+}
 
-  .CategorySlide {
+.CategorySlide {
     padding-top: 10px;
     font-size: 20px;
     font-weight: bolder;
-  }
+}
+
+.QRCodeBox {
+    border: 1px solid magenta;
+    padding-top: .5em;
+}
+
+.QRCodeBoxHeader {
+    border: 1px solid magenta;
+    font-weight: bolder;
+    font-size: 35px;
+    padding-top: .5em;
+    color: #757575;
+    padding-top: 1em;
+}
+
+.QRCodeBoxDescription {
+    border: 1px solid magenta;
+}
+  
