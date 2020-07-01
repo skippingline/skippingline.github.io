@@ -45,17 +45,15 @@ export default function EstablishmentHome() {
                             col-sm-8
                             col-md-12">
 
-                    <div className="EstablishmentHomeIcon">
-                            <svg viewBox="-20 -20 220 220">
-	                            <circle class="establishmentcircle" cx="100" cy="100" r="95" stroke="#2BFC7F" stroke-width="10" fill-opacity="0" />
+                    <div className="EstablishmentHomeIcon row center-xs">
+                            <svg viewBox="0 0 220 220">
+	                            <circle className="establishmentcircle" cx="110" cy="75" r="65" stroke="#2BFC7F" stroke-width="8" fill-opacity="0" />
                                 <path id="curve" d="M15,110a95,95 0 1,0 190,0a95,95 0 1,0 -190,0" fill="none"/>
-                                <text x="50%" y="62%" text-anchor="middle" fontSize="80px" fill="#2BFC7F">97%</text>
-                                <text width="300">
-                                    <textPath alignmentBaseline="top" xlinkHref="#curve" startOffset="80px" textLength="80%">
-                                    3 People Under Max
-                                    </textPath>
-                                </text>
+                                <text x="50%" y="42%" text-anchor="middle" fontSize="55px" fill="#2BFC7F">97%</text>
                             </svg>
+                    </div>
+                    <div className="EstablishmentHomeCapacity row center-xs">
+                      <label>3 Under Max</label>
                     </div>
             </div>
 

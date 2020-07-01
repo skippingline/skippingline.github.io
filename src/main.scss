@@ -188,6 +188,7 @@ footer {
         text-align: center;
         background-color: #cb54f7;
         padding: 0.5em 0;
+        font-style: none;
         font-size: 1.5em;
         margin-top: 1em;
         transition: 0.2s ease-in-out;
@@ -509,7 +510,7 @@ footer {
     }
 }
 .EstablishmentHomeChart {
-    margin-top: 2em;
+    margin-top: 1.25em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -517,10 +518,21 @@ footer {
 
 .EstablishmentHomeIcon {
     margin-top: 1em;
-    height: 220px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.EstablishmentHomeCapacity {
+    margin-top: 15px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2BFC7F;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .establishmentcircle {
@@ -570,13 +582,12 @@ footer {
 .item {
     border: 1px solid #cccccc;
     display: inline-block;
-    width: 150px;
+    width: 175px;
+    height: 150px;
     background-color: #F5F5F5;
     text-align: center;
-    padding: 50px 30px;
     font-size: 20px;
     margin: 0 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .LabelSlide {
@@ -593,7 +604,6 @@ footer {
 }
 
 .QRCodeBox {
-    border: 1px solid magenta;
     padding-top: .5em;
 }
 
@@ -605,8 +615,24 @@ footer {
     color: #757575;
     padding-top: 1em;
 }
-
-.QRCodeBoxDescription {
-    border: 1px solid magenta;
-}
   
+.bookbutton {
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: .15em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    background-color: #cb54f7;
+    padding: 0.5em 0;
+    font-size: 1.25em;
+    font-weight: bolder;
+    margin-top: 1em;
+    transition: 0.2s ease-in-out;
+    width: 200px;
+    height: 60px;
+    &:hover {
+        background: #a443c7;
+        cursor: pointer;
+    }
+}

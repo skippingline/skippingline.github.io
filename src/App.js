@@ -14,6 +14,7 @@ import Restaurant from "./pages/Restaurant";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import QRCodeGenerator from "./pages/QRCodeGenerator";
+import QRScanner from "./pages/QRScanner";
 
 
 const navLinks = [
@@ -39,6 +40,7 @@ const App = () => {
           <Route path="/establishmenthome" component={EstablishmentHome} />
           <Route path="/SignIn" component={SignIn} />
           <Route path="/QRCodeGenerator" component={QRCodeGenerator} />
+          <Route path="/QRScanner" component={QRScanner} />
           <Route component={Error404} />
         </Switch>
       </main>
