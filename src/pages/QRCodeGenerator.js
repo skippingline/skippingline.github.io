@@ -12,7 +12,7 @@ const QRCodeGenerator = () => {
             </div>
 
             <div className="row center-xs col xs-12">
-                <label style={{color:'#757575', fontSize:'25px', paddingTop:'25px', fontWeight:'bolder', paddingTop:'45px'}}>Whole Foods Market</label>
+                <label style={{color:'#757575', fontSize:'25px', fontWeight:'bolder', paddingTop:'45px'}}>Whole Foods Market</label>
             </div>
 
             <div className="row center-xs col xs-12">
