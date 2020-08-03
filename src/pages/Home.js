@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const data = [
+{
+        image: "https://images1.miaminewtimes.com/imager/u/745xauto/10410941/spot-babershop.jpeg",
+    title: "Barber Shop",
+    link: ""
+}
+]
 
 const Home = () => {
     return (
@@ -23,7 +30,14 @@ const Home = () => {
             <section className="horizontal-scroll">
                 
                 <div id="containerhome" className="item">
-                <img className="frontpicimg1" src={"https://images1.miaminewtimes.com/imager/u/745xauto/10410941/spot-babershop.jpeg"} height="150px" width="175px" alt=""/>
+                {/* <img className="frontpicimg1" src={} height="150px" width="175px" alt=""/> */}
+                    <div style={{"backgroundImage": "url('https://images1.miaminewtimes.com/imager/u/745xauto/10410941/spot-babershop.jpeg')", "width": "100%", "height": "100%", "backgroundSize": "cover"}} height="150px" width="175px">
+                        <div style={{"backgroundColor": "rgba(0,0,0,.2)", "width": "100%", "height": "100%"}}>
+                            <h1>
+
+                            </h1>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="containerhome" className="item">
