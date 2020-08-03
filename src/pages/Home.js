@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const data = [
+{
+        image: "https://images1.miaminewtimes.com/imager/u/745xauto/10410941/spot-babershop.jpeg",
+    title: "Barber Shop",
+    link: ""
+}
+]
 
 const Home = () => {
     return (
