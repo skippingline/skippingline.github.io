@@ -100,7 +100,8 @@ footer {
 }
 
 .container {
-    width: 95% !important;
+    padding: 0 2.5%;
+    width: 100%;
 }
 
 .searchBar {
@@ -231,27 +232,27 @@ footer {
 
 .restaurantheader {
     font-size: 13px;
-  padding: 10px 8px 10px 14px;
-  background:none;
-  border: none;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 2em;
+    padding: 10px 8px 10px 14px;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 2em;
 }
 
 .restaurantdropselect {
-  font-size: 25px;
-  font-weight: bolder;
-  width: 150px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: #ffffff;
-  text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #ffffff;
+    text-align: center;
 }
 
 .restaurantBoxes .col-xs-6 div {
@@ -530,7 +531,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #2BFC7F;
+    color: #2bfc7f;
     font-weight: bolder;
     font-size: larger;
 }
@@ -547,14 +548,14 @@ footer {
     }
 }
 
-.HomeSearchButton{
+.HomeSearchButton {
     height: 50px;
     background-color: white;
     margin-top: 3em;
     border: 1px solid #cccccc;
 }
 
-.HomeSearchIcon{
+.HomeSearchIcon {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -567,7 +568,7 @@ footer {
     color: #ffffff;
     height: 100px;
     text-align: center;
-    padding: 20px
+    padding: 20px;
 }
 
 .horizontal-scroll {
@@ -583,17 +584,17 @@ footer {
     display: inline-block;
     width: 175px;
     height: 150px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     text-align: center;
     font-size: 20px;
     margin: 0 10px;
 }
 
 .LabelSlide {
-      padding-top: 2em;
-      font-size: 20px;
-      font-weight: bolder;
-      color: #757575;
+    padding-top: 2em;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #757575;
 }
 
 .CategorySlide {
@@ -603,21 +604,21 @@ footer {
 }
 
 .QRCodeBox {
-    padding-top: .5em;
+    padding-top: 0.5em;
 }
 
 .QRCodeBoxHeader {
     border: 1px solid magenta;
     font-weight: bolder;
     font-size: 35px;
-    padding-top: .5em;
+    padding-top: 0.5em;
     color: #757575;
     padding-top: 1em;
 }
-  
+
 .bookbutton {
     border: 0.16em solid rgba(255, 255, 255, 0);
-    border-radius: .15em;
+    border-radius: 0.15em;
     box-sizing: border-box;
     text-decoration: none;
     color: #ffffff;
