@@ -57,22 +57,28 @@ const Home = () => {
                     </Link>
                 </button>
             </div>
-            <div className="row center-xs LabelSlide">
-                <label>Top Places to Skip</label>
-            </div>
-            <section className="horizontal-scroll">
-                {data.map(place => (
-                    <div className="item" key={place.title}>
-                        <div style={{ "backgroundImage": `url('${place.image}')`, "width": "100%", "height": "100%", "backgroundSize": "cover" }} height="150px" width="175px">
-                            <div style={{ "backgroundColor": "rgba(0,0,0,.4)", "width": "100%", "height": "100%" }}>
-                                <h1 style={{ "margin": "0", "color": "white" }}>
-                                    {place.title}
-                                </h1>
+
+            <div className="backgroundhome">
+                <div className="row col-xs-4 LabelSlide">
+                    <label>Top Places to Skip</label>
+                </div>
+                <section className="horizontal-scroll">
+                    {data.map(place => (
+                        <div className="item" key={place.title}>
+                            <div style={{ "backgroundImage": `url('${place.image}')`, "width": "100%", "height": "100%", "backgroundSize": "cover" }} height="150px" width="175px">
+                                <div style={{ "backgroundColor": "rgba(0,0,0,.4)", "width": "100%", "height": "100%" }}>
+                                    <h1 style={{ "margin": "0", "color": "white" }}>
+                                        {place.title}
+                                    </h1>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </section>
+                    ))}
+                </section>
+                <div className="row col-xs-4 LabelSlide">
+                    <label>Available Right Now</label>
+                </div>
+            </div>
         </div>
     )
 };

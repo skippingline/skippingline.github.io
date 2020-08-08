@@ -47,8 +47,7 @@ header {
     }
     button {
         border: none;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
+        background-color: white;
         padding: 2px 4px;
     }
 }
@@ -589,11 +588,16 @@ footer {
     margin: 0 10px;
 }
 
+.backgroundhome {
+    background-color: white;
+}
+
 .LabelSlide {
       padding-top: 2em;
-      font-size: 20px;
+      font-size: 40px;
       font-weight: bolder;
-      color: #757575;
+      font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: black;
 }
 
 .CategorySlide {
