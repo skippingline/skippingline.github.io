@@ -1,19 +1,15 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Header = (props) => {
     const logLeClick = () => {
-        const mainElement = document.querySelector("main");
-        mainElement.classList.toggle("moveOver");
+        const shadowNav = document.querySelector(".shadowNav");
+        shadowNav.classList.toggle("active");
+        // mainElement.classList.toggle("moveOver");
     }
 
-    const collapseNav = () => {
-        const mainElement = document.querySelector("main");
-        window.scrollTo(0, 0);
-        document.getElementById("reverseAnimation").beginElement();
-        mainElement.classList.remove("moveOver");
-    }
+
 
 
     return (
@@ -55,14 +51,7 @@ const Header = (props) => {
                     </div>
                 </div>
             </header >
-            <div className="navLinks">
-                <ul>
-                    {props.navLinks.map((linkObject) => (
-                        <li key={linkObject.url}>
-                            <NavLink to={linkObject.url} activeClassName="activeMenuItem" exact onClick={collapseNav}>{linkObject.title}</NavLink>
-                        </li>))}
-                </ul>
-            </div>
+
         </>);
 }
 

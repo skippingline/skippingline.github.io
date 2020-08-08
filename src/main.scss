@@ -135,10 +135,23 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.navLinks {
+.shadowNav {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    height: 100%;
+    width: calc(100vw - 300px);
+    background: red;
+}
+
+nav {
     position: fixed;
     right: 0;
+    top: 100px;
+    z-index: 1000;
+    background: lightblue;
     width: 300px;
+    height: 100%;
     ul {
         list-style-type: none;
         padding: 0;
