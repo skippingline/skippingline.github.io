@@ -1,20 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = ({ navLinks }) => {
-    const collapseNav = () => {
-        const mainElement = document.querySelector("main");
+const Navbar = ({ navLinks, navActive, setNavActive }) => {
+    const style = {
+        right: navActive ? "0" : "-300px"
+    }
+
+
+    const linkClicked = () => {
         window.scrollTo(0, 0);
-        document.getElementById("reverseAnimation").beginElement();
-        mainElement.classList.remove("moveOver");
+        setNavActive(!navActive);
     };
 
     return (
-        <nav>
+        <nav style={style}>
             <ul>
                 {navLinks.map((linkObject) => (
                     <li key={linkObject.url}>
-                        <NavLink to={linkObject.url} activeClassName="activeMenuItem" exact onClick={collapseNav}>{linkObject.title}</NavLink>
+                        <NavLink to={linkObject.url} activeClassName="activeMenuItem" exact onClick={linkClicked}>{linkObject.title}</NavLink>
                     </li>))}
             </ul>
         </nav>

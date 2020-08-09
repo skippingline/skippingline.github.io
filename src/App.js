@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./flexboxgrid.min.css";
 import Footer from "./Footer.js";
@@ -16,6 +16,7 @@ import QRScanner from "./pages/QRScanner";
 import Restaurant from "./pages/Restaurant";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import ShadowNav from './ShadowNav';
 
 const navLinks = [
   { url: "/signin", title: "Sign In" },
@@ -26,9 +27,11 @@ const navLinks = [
 
 
 const App = () => {
+  const [navActive, setNavActive] = useState(false);
+
   return (
     <Router>
-      <Header navLinks={navLinks} />
+      <Header navActive={navActive} setNavActive={setNavActive} />
       <main>
         <Switch>
           <Route path="/" component={Home} exact />
@@ -44,8 +47,8 @@ const App = () => {
           <Route component={Error404} />
         </Switch>
       </main>
-      <Navbar navLinks={navLinks} />
-      <div className="shadowNav"></div>
+      <Navbar navLinks={navLinks} navActive={navActive} setNavActive={setNavActive} />
+      <ShadowNav navActive={navActive} setNavActive={setNavActive} />
       <Footer navLinks={navLinks} />
 
     </Router>
