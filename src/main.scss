@@ -110,7 +110,7 @@ footer {
 .searchBar {
   border: 1px solid #cccccc;
   background: white;
-  margin-top: 2em;
+  margin-top: 5.5em;
   height: 50px;
   font-size: 1.25em;
   font-weight: 100;
@@ -155,7 +155,7 @@ nav {
   right: -300px;
   top: 100px;
   z-index: 1000;
-  background: lightblue;
+  background: #dc83fc;
   width: 300px;
   height: 100%;
   transition: 0.2s ease-in-out right;
@@ -573,7 +573,7 @@ nav {
 .HomeSearchButton {
   height: 50px;
   background-color: white;
-  margin-top: 3em;
+  margin-top: 10em;
   border: 1px solid #cccccc;
   border-left: none;
   transition: .2s ease-in-out background-color;
@@ -612,22 +612,24 @@ nav {
 }
 
 .item {
-  border: 1px solid #cccccc;
+  border: 1px solid red;
   display: inline-block;
-  width: 175px;
-  height: 150px;
-  background-color: #f5f5f5;
+  width: 300px;
+  height: 350px;
+  background-color: none;
   text-align: center;
   font-size: 20px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .backgroundhome {
   background-color: white;
+  height: 800px;
+  margin-top: 6em;
 }
 
 .LabelSlide {
-  padding-top: 2em;
+  padding-top: 1em;
   font-size: 40px;
   font-weight: bolder;
   color: black;

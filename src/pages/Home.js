@@ -3,43 +3,51 @@ import React from 'react';
 const data = [
     {
         image: "https://images1.miaminewtimes.com/imager/u/745xauto/10410941/spot-babershop.jpeg",
-        title: "Barber Shop",
-        link: ""
+        title: "The Spot Barber Shop",
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://www.traderjoes.com/Brandify/images/770-pinecrest-storefront.jpg",
         title: "Trader Joe's",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://images1.miaminewtimes.com/imager/u/745xauto/11242002/shops_best_thrift_store-dragonfly_thrift_boutique-_courtesy.jpg",
         title: "Dragonfly Thrift Shop",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://media.bizj.us/view/img/5691321/storefrontpublixmillerroad*1200xx4500-2531-0-535.jpg",
         title: "Publix",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://images1.miaminewtimes.com/imager/u/original/11642705/bars_bestcocktail_barnancy.jpg",
         title: "Barnancy Cocktails",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://www.miamiherald.com/latest-news/2727h5/picture209530074/alternates/LANDSCAPE_1140/BIZ%20TARGET-RACE-LAWSUIT%20MS.JPG",
-        title: "Target ⭕️",
-        link: ""
+        title: "Target",
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://ik.imagekit.io/grgdihc3l/getmedia/133ac6c6-9585-42da-a036-3c2d57bd410b/carillon-spa-1440x900.jpg.aspx?width=1440&height=900&ext=.jpg",
         title: "Carillon Spa",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     },
     {
         image: "https://www.pamm.org/sites/default/files/styles/og_image/public/outside_eastportico_withpeople_web.png?itok=KXGTSI67",
         title: "East Portico Sports",
-        link: ""
+        link: "",
+        address: "8099 S Dixie Hwy Miami, FL 33143"
     }
 ]
 
@@ -60,11 +68,14 @@ const Home = () => {
                 <section className="horizontal-scroll">
                     {data.map(place => (
                         <div className="item" key={place.title}>
-                            <div style={{ "backgroundImage": `url('${place.image}')`, "width": "100%", "height": "100%", "backgroundSize": "cover" }} height="150px" width="175px">
-                                <div style={{ "backgroundColor": "rgba(0,0,0,.4)", "width": "100%", "height": "100%" }}>
-                                    <h1 style={{ "margin": "0", "color": "white" }}>
+                            <div style={{ "backgroundImage": `url('${place.image}')`, "width": "100%", "height": "75%", "backgroundSize": "cover" }} height="150px" width="175px">
+                                <div>
+                                    <h1 style={{ "margin": "0", "color": "black", "fontSize": "25px", "paddingTop": "265px", "paddingRight": "120px"}}>
                                         {place.title}
                                     </h1>
+                                    <h3 style={{"color": "black", "fontSize": "15px", "paddingRight": "120px"}}>
+                                        {place.address}
+                                    </h3>
                                 </div>
                             </div>
                         </div>
